@@ -1,4 +1,4 @@
-ACTIVIDAD 3 -  ENTORNOS DE DESARROLLO
+ACTIVIDAD 3
 
 -------------------------------------------
 

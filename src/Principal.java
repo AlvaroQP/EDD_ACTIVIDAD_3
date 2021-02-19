@@ -18,8 +18,6 @@ public class Principal {
 	
 	public static void main(String[] args) {
 		
-		// Pruebas previas al uso de JUNIT
-		
 		double num1 = 124.544544;
 		double num2 = 7.45;
 		double num3 = 4.23;
