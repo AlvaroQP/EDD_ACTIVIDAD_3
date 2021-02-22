@@ -2,10 +2,7 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="src"/>
-<<<<<<< HEAD
-=======
 	<classpathentry kind="src" path="test"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
->>>>>>> 12d5a7b0ca233501d10250369e22c8161b54253a
 	<classpathentry kind="output" path="bin"/>
 </classpath>
