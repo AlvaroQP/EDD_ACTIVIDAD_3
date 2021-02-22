@@ -10,7 +10,6 @@
 			<arguments>
 			</arguments>
 		</buildCommand>
-<<<<<<< HEAD
 		<buildCommand>
 			<name>org.eclipse.wst.validation.validationbuilder</name>
 			<arguments>
@@ -19,10 +18,6 @@
 	</buildSpec>
 	<natures>
 		<nature>org.eclipse.wst.jsdt.core.jsNature</nature>
-=======
-	</buildSpec>
-	<natures>
->>>>>>> 12d5a7b0ca233501d10250369e22c8161b54253a
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
 </projectDescription>
