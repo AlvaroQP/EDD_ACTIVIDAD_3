@@ -54,12 +54,17 @@ package com.itt.calculadora;
  *<h2>Casos especiales:</h2>
  *<ol>
  *	<li><p>Utilizacion de numeros negativos no permitidos:</p>
- * 		Si uno de los numeros pasados es negativo se lanzara una excepcion
- *		ya que realiza operaciones basicas de suma de numeros positivos.
+ * 		Si uno de los numeros pasados es negativo se retorna como valor 0 y
+ * 		se manda un mensaje de que solo son permitidos numeros positivos.
  * 	</li>
  * 	<li><p>Usar caracteres en vez de numeros:</p>
- * 		Si en vez de numeros como argumentos se pasan caracteres, se lanzara
- * 		una excepcion, ya que lo unico que estan permitidos son numeros.
+ * 		Si en vez de numeros como argumentos se pasan caracteres, en tiempo de 
+ * 		compilacion lanza un error ya que como argumentos se piden enteros o reales
+ * 	</li>
+ * 	<li><p>Si uno de los parametros es 0:</p>
+ * 		En este caso si el primer valor es cero, la operacion se realizara sin
+ * 		mayor problema. Si el valor que es cero es el segundo, se lanza por consola
+ * 		un mensaje de que el divisor no puede ser 0 y se retorna 0.
  * 	</li>
  *</ol>
  *
@@ -136,7 +141,16 @@ public class Division {
 	  */	
 	public static double inverso(double num) {
 		
-		return 1/num;
+		if(num<0) {
+			System.out.println("La calculadora solo admite numeros positivos.");
+			return 0.00;
+		}else if(num==0) {
+			System.out.println("El divisor no puede ser 0");
+			return 0.00;
+		}else {
+			return 1/num;
+		}
+		
 	}
 	
 	/**
