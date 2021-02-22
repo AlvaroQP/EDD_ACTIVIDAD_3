@@ -14,4 +14,4 @@ Consideraciones
 
 Para toda la actividad se valorará el trabajo el trabajo en equipo, el orden y la claridad de la documentación.
 
-Es necesario la creación de un pequeño documento formal sobre la actividad (1-2 páginas), indicando los componentes del equipo, la URL del repositorio GITHUB compartido, las decisiones tomadas y la labor de cada integrante del equipo.
+Es necesario la creación de un pequeño documento formal sobre la actividad (1-2 páginas), indicando los componentes del equipo, la URL del repositorio GITHUB compartido, las decisiones tomadas y la labor de cada integrante del equipo .
