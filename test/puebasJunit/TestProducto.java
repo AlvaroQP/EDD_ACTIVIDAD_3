@@ -11,40 +11,36 @@ import org.junit.jupiter.api.Test;
 import com.itt.calculadora.Producto;
 
 class TestProducto {
+	//Declaro las variables que usare en los test.
 	
 	// Enteros:
-	private static int entero1;
-	private static int entero2;
+	private static final int entero1 = 5;
+	private static final int entero2 = 4;
 	// Reales:
-	private static double real1;
-	private static double real2;
-	private static double real3;
+	private static final double real1 = 5.4;
+	private static final double real2 = 3.7;
+	private static final double real3 = 2.5;
 	// Valor que se devuelve en caso de error:
 	private static final int CERO = 0;
 	
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
-		
+		//Se aplica antes de comenzar los test
 	}
 	
 	@AfterAll
 	static void terDownAfterClass() throws Exception {
-		
+		//Se aplica al finalizar los test
 	}
 	
 	@BeforeEach
 	void beforeEach() {
-		// Se aplica antes de cada test:
-		entero1 = 5;
-		entero2 = 4;
-		real1 = 5.4;
-		real2 = 3.7;
-		real3 = 2.5;
+		// Se aplica antes de cada test
 	}
 	
 	@AfterEach
 	void afterEach() {
-		// Se aplica despues de cada test:
+		// Se aplica despues de cada test
 	}
 	
 	/**
@@ -93,7 +89,7 @@ class TestProducto {
 		assertEquals(CERO, Producto.prodReales(real2, realNegativo, real3));
 		
 		// Paso un double negativo como tercer argumento y dos double positivos como los demas argumentos, prodReales deberia devolver 0
-			assertEquals(CERO, Producto.prodReales(realNegativo, real2, real3));
+			assertEquals(CERO, Producto.prodReales(real2, real3,realNegativo));
 		
 		// Paso los tres argumentos negativos, prodReales deberia devolver 0
 		assertEquals(CERO, Producto.prodReales(realNegativo, realNegativo, realNegativo));
@@ -169,6 +165,8 @@ class TestProducto {
 		
 		// Paso un entero positivo como primer argumento y un 1 como segundo argumento, Potencia deberia devolver el valor del primer argumento.
 		assertEquals(entero1, Producto.potencia(entero1, 1));
-			
+		
+		//Paso dos enteros positivos distintos de 0 y 1, Potencia devolvera el primero elevado al segundo
+		assertEquals(result, Producto.potencia(entero1, entero2));
 	}
 }
