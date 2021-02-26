@@ -13,10 +13,14 @@ import com.itt.calculadora.Division;
 
 public class TestDivision {
 	
-	private static double real1 = 5.25;
-	private static double real2 = 9.45;
-	private static int num1 = 8;
-	private static int num2 = 3;
+	// Enteros:
+	private static int entero1 = 5;
+	private static int entero2 = 4;
+	// Reales:
+	private static double real1 = 5.4;
+	private static double real2 = 3.7;
+	private static double real3 = 2.5;
+	// Valor que se devuelve en caso de error:
 	private static final int CERO = 0;
 	
 	@BeforeAll
@@ -31,22 +35,12 @@ public class TestDivision {
 	
 	@BeforeEach
 	void setUp() throws Exception {
-		//Me interesa usar siempre los mismos valores por lo que antes de 
-		//cada test los inicializo.
-		real1 = 5.25;
-		real2 = 9.45;
-		num1 = 8;	
-		num2 = 3;
+
 	}
 	
 	@AfterEach
 	void tearUp() throws Exception{
-		//Me interesa usar siempre los mismos valores por lo que antes de 
-		//cada test los reseteo a 0.
-		real1 = 0.00;
-		real2 = 0.00;
-		num1 = 0;	
-		num2 = 0;
+		
 	}
 	
 	/**
