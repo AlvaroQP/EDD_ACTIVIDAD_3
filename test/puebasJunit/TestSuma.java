@@ -27,32 +27,22 @@ public class TestSuma {
 	
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
-		
+		//Se aplica antes de comenzar los test
 	}
 	
 	@AfterAll
 	static void terDownAfterClass() throws Exception {
-		
+		//Se aplica al finalizar los test
 	}
 	
 	@BeforeEach
 	void beforeEach() {
-		// Se aplica antes de cada test:
-		entero1 = 5;
-		entero2 = 4;
-		real1 = 5.4;
-		real2 = 3.7;
-		real3 = 2.5;
+		// Se aplica antes de cada test
 	}
 	
 	@AfterEach
 	void afterEach() {
-		// Se aplica despues de cada test:
-		entero1 = 0;
-		entero2 = 0;
-		real1 = 0;
-		real2 = 0;
-		real3 = 0;
+		// Se aplica despues de cada test
 	}
 	
 	/**
@@ -176,6 +166,7 @@ public class TestSuma {
 	 */
 	@Test
 	public void acumulados() {
+		System.out.println("***** Test metodo sumAcumulado junto a metodo getAcum *****");
 		double r1 = real1;
 		double r2 = real2;
 		double r3 = real3;
@@ -183,7 +174,7 @@ public class TestSuma {
 		// Pasamos valores para ir acumulando:
 		Suma.sumAcumulado(r1);
 		Suma.sumAcumulado(r2);
-		double acum = r1 + r2;
+		acum = r1 + r2;
 		
 		// Hemos acumulado dos numeros positivos, por lo que si llamamos al metodo
 		// getAcum el resultado deberia coincidir con el resultado de r1+r2.
