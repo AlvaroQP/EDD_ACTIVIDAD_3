@@ -19,7 +19,6 @@ public class TestDivision {
 	// Reales:
 	private static double real1 = 5.4;
 	private static double real2 = 3.7;
-	private static double real3 = 2.5;
 	// Valor que se devuelve en caso de error:
 	private static final int CERO = 0;
 	
@@ -106,7 +105,7 @@ public class TestDivision {
 		
 		//Se pasa el primer valor como positivo y el segundo como negativo y tiene que
 		//devolver 0
-		int enteroNegativo2 = -r2;
+		int enteroNegativo2 = -2;
 		assertEquals(CERO, Division.divEnteros(entero1,enteroNegativo2));
 		
 		//Se pasan los dos valores negativos y tiene que devolver 0
@@ -156,7 +155,7 @@ public class TestDivision {
 	
 	/**
 	 * En esta prueba unitaria se testea el metodo "raiz" de la clase Division.
-	 * Se pasa un número real y calcula su raiz cuadrada.
+	 * Se pasa un numero real y calcula su raiz cuadrada.
 	 */
 	@Test
 	public void testRaiz() {
