@@ -175,12 +175,6 @@ public class TestResta {
 		// getAcum el resultado deberia coincidir con el resultado de r1+r2.
 		assertEquals(acum, Resta.getAcum());
 		
-		// Pasamos dos valores adicionales, uno de ellos negativo (que debera ser ignorado)
-		Resta.resAcumulado(r3);
-		double r4 = -5.0;
-		Resta.resAcumulado(r4);
-		acum = r1 + r2 + r3 + r4;
-		assertEquals(acum, Resta.getAcum());
 		
 	}
 }

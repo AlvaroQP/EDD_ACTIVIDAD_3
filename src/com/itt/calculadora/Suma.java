@@ -166,8 +166,8 @@ public class Suma {
 	
 	public static void sumAcumulado(double num) {
 		if(num < 0) {
-			System.out.println("El número introducido no se tiene en cuenta");
-			System.out.println("Por favor introduce un número mayor que 0");
+			System.out.println("El numero introducido no se tiene en cuenta");
+			System.out.println("Por favor introduce un numero mayor que 0");
 		}else {
 			acum = acum + num;
 		}
