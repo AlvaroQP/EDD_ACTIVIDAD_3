@@ -73,12 +73,12 @@ public class TestDivision {
 		assertEquals(CERO, Division.divReales(realNegativo1, realNegativo2));
 		
 		//Se pasa el segundo valor como 0 y tiene que devolver 0
-		assertEquals(CERO,Division.divReales(real1, real2));
+		assertEquals(CERO,Division.divReales(real1, CERO));
 		
 		//Se pasa el primer valor como 0 y tiene que devolver el resultado de la 
 		//operacion
 		result = CERO/real2;
-		assertEquals(result, Division.divReales(real1, real2));
+		assertEquals(result, Division.divReales(CERO, real2));
 	}
 	
 	/**
@@ -116,8 +116,8 @@ public class TestDivision {
 		
 		//Se pasa el primer valor como 0 y tiene que devolver el resultado de la 
 		//operacion
-		result =(double)entero1/entero2;
-		assertEquals(result, Division.divReales(entero1, entero2));
+		result =(double)CERO/entero2;
+		assertEquals(result, Division.divReales(CERO, entero2));
 	}
 	
 	/**
@@ -138,9 +138,7 @@ public class TestDivision {
 		
 		//sacamos el numero que se pasa como argumento es 0, devuelve un mensaje de 
 		//que el divisior no puede ser 0 y retorna 0.
-		result = 1/CERO;
-		assertNotEquals(result, Division.inverso(real1));
-		assertEquals(CERO, Division.inverso(real1));
+		assertEquals(CERO, Division.inverso(CERO));
 		
 		/*
 		 * sacamos el inverso de un numero negativo. Como la calculadora no admite
@@ -181,6 +179,7 @@ public class TestDivision {
 		 * retorna 0
 		 */
 		double realNegativo = -real1;
+		result = Math.sqrt(realNegativo);
 		assertNotEquals(result, Division.raiz(realNegativo));
 		assertEquals(CERO, Division.raiz(realNegativo));
 		
