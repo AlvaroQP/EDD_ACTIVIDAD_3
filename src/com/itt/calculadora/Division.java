@@ -137,7 +137,8 @@ public class Division {
 	  * @param num
 	  * 		Recoge el numero del cual queremos calcular su inverso.
 	  * @return
-	  * 		Nos devuelve el resultado de la operacion.
+	  * 		Nos devuelve el resultado de la operacion.<br>
+	  * 		Si el parametro que se introduce es menor o igual cero, nos devuelve cero.
 	  */	
 	public static double inverso(double num) {
 		
